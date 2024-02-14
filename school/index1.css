@@ -1,0 +1,21 @@
+html{
+    font-size: 30px;
+}
+
+body{
+    background-color: burlywood;
+    color: black;
+    }
+button, input, textarea{
+    font: inherit;
+}
+table, tr, th, td, caption{
+ border: 3px solid black;
+        font-family: 'Courier New', Courier, monospace;
+        border-collapse: collapse;
+        padding: 0.5rem;
+        background-color: midnightblue; 
+        }
+fieldset{
+    width: 96%;
+}
