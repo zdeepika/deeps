@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+}
+
+.protest-riot-regular {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.sancreek-regular {
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+  }
+  .rakkas-regular {
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+  }
+  
+
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+   /*  position: fixed;
+    top: 0%; */
+}
+
+main h1{
+    font-family: "DynaPuff";
+    color: darkgreen;
+}
+
+li{
+    background-color: goldenrod;
+    list-style-type: none;
+    text-align: center;
+    padding: 3%;
+    border: 2px solid black;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+li:hover, li:focus{
+    background-color: black;
+    a{
+        color: goldenrod;
+    }
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+
+figure{
+    padding-top: 1.5rem;
+}
+
+.logo1{
+    background-image: url(img1.jpg);
+    display: flex;
+    background-size: 100%;
+    background-position: bottom;
+    align-items: center;
+    margin: 0.2rem 1rem;
+    border: 4px solid darkgreen;
+    border-radius: 1.5rem;
+}
+
+.logo1 h1{    
+    display: flex; 
+    font-size: 4.5rem;
+    color: maroon; 
+    text-shadow: 10px 10px 10px goldenrod;
+    border: 1px solid seashell;
+    text-align: center;
+    border-radius: 1.5rem;
+    margin-right: 2rem;
+    background-color: rgba(255, 255, 255, 0.219);
+}
+
+
+.bg1{
+    background-image: url(img2.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin: 0.2rem 1rem;
+    border: 4px solid maroon;
+    border-radius: 1.5rem;
+}
+
+.bg2{
+    background-image: url(img3.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin: 0.2rem 1rem;
+    border: 4px solid maroon;
+    border-radius: 1.5rem;
+}
+
+.bg3{
+    background-image: url(img7.webp);
+    background-size: 100%;
+    background-position:center;
+    margin: 0.2rem 1rem;
+    border: 4px solid maroon;
+    border-radius: 1.5rem;
+}
+
+#menu, .timing, .contact, .about_us{
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    h1{
+        margin-bottom: 2rem;
+    }
+    h2{
+        color: brown;
+        font-weight: 150%;
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    p{
+        font-size: 1.5rem;
+        margin: 0.5rem;
+    }
+    .form{
+        width: 100%;
+        padding: 1rem;
+        background-color: burlywood;
+    }
+}
+
+.title{
+    font-size: 1.5rem;
+    color: maroon;
+}
+
+.location{
+    margin-top: 2.5rem;
+}
+
+button{
+    display: block;
+    font-size: inherit;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+
+.button1{
+    background-color: green;
+}
+
+.button2{
+    background-color: yellow;
+}
+
+ th, tr, td{
+    border: 2px solid goldenrod;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+thead{
+    color: purple;
+    background-color: rgba(244, 165, 96, 0.76);
+}
+
+tbody th{
+    color: brown;
+    background-color: rgba(222, 184, 135, 0.753);
+}
+
+td{
+    background-color: bisque;
+}
+footer a{
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    display: fixed;
+    color: goldenrod;
+    background-color: black;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+@media screen and ((width <= 980px) and (width >= 700px)){
+    li{
+        padding: 2%;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+    .logo1 h1{
+        font-size: 3rem;
+    }
+    .logo1 img{
+        width: 70%;
+        height: auto;
+    }
+    .logo2 img{
+        width: 30%;
+        height: auto;
+    }
+    #menu h1, .timing h1, .contact h1{
+        font-size: 2.5rem;
+        margin: 0%;
+    }
+    #menu h2, #hours h2, #contact h2{
+        font-size: 1.5rem;
+    }
+    #id{
+        padding-top: 0%;
+    }
+    .logo1{
+        margin-bottom: 0%;
+    }
+    table{
+        font-size: 0.7rem;
+    }
+    fieldset,  #hours p, #contact p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and ((width <= 699px) and (width >= 425px)){
+    li{
+        padding: 2%;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+    .logo1 h1{
+        font-size: 2.5rem;
+    }
+    .logo1 img{
+        width: 100%;
+        height: auto;
+    }
+    .logo2 img{
+        width: 50%;
+        height: auto;
+    }
+    #menu h1, .timing h1, .contact h1{
+        font-size: 2.5rem;
+        margin: 0%;
+        margin-bottom: 0;
+    }
+    #menu h2, #hours h2, #contact h2{
+        font-size: 1.5rem;
+    }
+    #id{
+        padding-top: 0%;
+    }
+    .logo1{
+        margin-bottom: 0%;
+    }
+    table{
+        font-size: 0.7rem;
+    }
+    fieldset,  #hours p, #contact p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (width < 425px){
+    li{
+        padding: 2%;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+    .logo1 img{
+        display: none;
+    }
+    .logo1{
+       display: flex;
+       flex-flow: column;
+       place-content: center;
+    }
+    .logo1 h1{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+    }
+   
+    .logo2 img{
+        width: 40%;
+        height: auto;
+    }
+    #menu h1, .timing h1, .contact h1{
+        font-size: 2rem;
+        margin: 0%;
+        margin-bottom: 0;
+    }
+    #menu h2, #hours h2, #contact h2{
+        font-size: 1.5rem;
+    }
+    #id{
+        padding-top: 0%;
+    }
+    .logo1{
+        margin-bottom: 0%;
+    }
+    table{
+        font-size: 0.7rem;
+    }
+    fieldset,  #hours p, #contact p{
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-color-scheme: dark){
+html{
+    background-color: purple;
+    background-image: radial-gradient(purple, black);
+}
+header li{
+    background-color: black;
+    border: 2px solid goldenrod;
+    a{
+        color: white;
+    }
+}
+.logo1, .bg1, .bg2{     border: 2px solid lawngreen;    }
+#menu h1, #hours h1, #contact h1{   color: lawngreen;   }
+#menu h2, #hours h2, #contact h2{   color: red; }
+td{     background-color: rgba(255, 228, 196, 0.712);   }
+tbody th{   color: maroon;  }
+thead th{   color: darkblue;}
+p{      color: antiquewhite;    }
+.title{    color: orangered;}
+}
